@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="main.c" gcc -c $CFILE -o "$(basename -- "$CFILE" | cut -f 1 -d '.').o"
+gcc $CFILE -E -o c
